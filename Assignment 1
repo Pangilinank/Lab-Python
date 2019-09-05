@@ -1,1 +1,13 @@
+#python 3.5.2
+import datetime
 
+
+today = datetime.date.today( )
+timeNow = datetime.datetime.now()
+
+date = today.strftime("Date: %A, %B %w, %Y")
+time = timeNow.strftime("Time: %H:%M %Z %p")
+
+print("Date: " + date, time)
+
+#"Date: Thursday, September 5, 2019 Time: 09:50 AM EST"
